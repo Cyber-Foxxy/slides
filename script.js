@@ -10,6 +10,7 @@ class JusticeSlide {
 }
 
 // ----- OBJECTS -----
+
 let slide1 = new JusticeSlide(
   "Occupation of Alcatraz",
   "https://upload.wikimedia.org/wikipedia/commons/7/7e/Alcatraz_Occupation.jpg",
@@ -33,6 +34,7 @@ let slide3 = new JusticeSlide(
   "Rob Wilson / CC BY-SA",
   2016
 );
+
 let slide4 = new JusticeSlide(
   "Idle No More Round Dance",
   "https://upload.wikimedia.org/wikipedia/commons/4/4c/Idle_No_More_Ottawa.jpg",
@@ -40,6 +42,7 @@ let slide4 = new JusticeSlide(
   "Obert Madondo / CC BY-NC-SA",
   2012
 );
+
 let slide5 = new JusticeSlide(
   "Native American Voting Rights Rally",
   "https://upload.wikimedia.org/wikipedia/commons/3/3e/Native_Vote_Rally.jpg",
@@ -47,6 +50,7 @@ let slide5 = new JusticeSlide(
   "Native Vote / CC License",
   "2018 approx."
 );
+
 // ----- ARRAY -----
 let slides = [slide1, slide2, slide3, slide4, slide5];
 
@@ -63,7 +67,6 @@ let lastIndex = -1;
 function showRandomSlide() {
   let index = Math.floor(Math.random() * slides.length);
 
-  // Optional polish: avoid repeating the same slide
   while (index === lastIndex) {
     index = Math.floor(Math.random() * slides.length);
   }
